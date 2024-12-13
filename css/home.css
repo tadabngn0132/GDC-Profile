@@ -1,0 +1,99 @@
+:root {
+    --header-background-color: #BF2A37;
+    --header-text-color: #F2F2F2;
+    --general-text-color: #333;
+    --main-background-color: #F2F2F2;
+    --main-sub-color: #F29B88;
+    --footer-background-color: #0D0D0D;
+    --footer-text-color: #BF1515;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+    background-color: var(--main-background-color);
+    color: var(--general-text-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    justify-items: center;
+    gap: 3rem;
+}
+
+header img {
+    max-width: 4rem;
+    height: auto;
+}
+
+header ul {
+    display: flex;
+    gap: 3rem;
+}
+
+header a {
+    color: var(--header-text-color);
+    font-size: 1.1rem;
+}
+
+main {
+    grid-row: 2;
+    justify-self: center;
+    padding: 1rem 0;
+}
+
+footer {
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    justify-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+footer #footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+footer #info {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+footer img {
+    max-width: 9rem;
+    height: auto;
+}
+
+footer a {
+    color: var(--footer-text-color);
+}
+
+
+
