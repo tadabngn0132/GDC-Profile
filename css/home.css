@@ -1,6 +1,6 @@
 :root {
-    --header-background-color: #BF2A37;
-    --header-text-color: #F2F2F2;
+    --header-background-color: #F2F2F2;
+    --header-text-color: #BF2A37;
     --general-text-color: #333;
     --main-background-color: #F2F2F2;
     --main-sub-color: #F29B88;
@@ -25,7 +25,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
 }
 
@@ -35,14 +35,18 @@ header {
     align-items: center;
     background-color: var(--header-background-color);
     color: var(--header-text-color);
-    padding: 0.5rem 1rem;
+    padding: 1rem 0;
     justify-content: center;
     justify-items: center;
-    gap: 3rem;
+    gap: 6rem;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header img {
-    max-width: 4rem;
+    max-width: 3.75rem;
     height: auto;
 }
 
@@ -56,14 +60,62 @@ header a {
     font-size: 1.1rem;
 }
 
+header .header-button {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-button button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--header-text-color);
+    color: var(--header-background-color);
+    border-radius: 1.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.banner-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+}
+
 main {
-    grid-row: 2;
+    grid-row: 3;
     justify-self: center;
-    padding: 1rem 0;
+    padding: 3rem 0;
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 3rem;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-text h1 {
+    color: var(--header-text-color);
+}
+
+.about-image img {
+    max-width: 40rem;
+    max-height: 40rem;
+    border-radius: 1rem;
+    border: 0.25rem solid var(--main-sub-color); 
 }
 
 footer {
-    grid-row: 3;
+    grid-row: 4;
     display: flex;
     align-items: center;
     padding: 1rem 0;
