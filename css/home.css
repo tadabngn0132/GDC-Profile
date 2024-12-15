@@ -115,17 +115,18 @@ main {
     background-color: var(--main-background-color);
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 8rem;
 }
 
 /* Code phần giới thiệu */
 #about {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    align-self: center;
+    gap: 3rem;
     margin-top: 4rem;
     padding: 1rem 0;
-    scroll-margin-top: 9.5rem;
+    scroll-margin-top: 10rem;
 }
 
 .about-text {
@@ -135,7 +136,7 @@ main {
 }
 
 .about-text h1 {
-    font-size: 2.45rem;
+    font-size: 2.3rem;
     color: var(--header-text-color);
 }
 
@@ -145,8 +146,8 @@ main {
 }
 
 .about-image img {
-    max-width: 40rem;
-    max-height: 40rem;
+    max-width: 35rem;
+    max-height: 35rem;
     border-radius: 1rem;
     border: 0.25rem solid var(--main-sub-color);
 }
@@ -183,20 +184,90 @@ main {
 }
 
 .members img {
-    max-width: 24rem;
+    max-width: 21.5rem;
     border-radius: 2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.members img:hover {
+    transform: scale(1.02);
+}
+
+#activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 67.75rem;
+    gap: 3rem;
+    scroll-margin-top: 9.2rem;
+}
+
+#activities h1 {
+    font-size: 2.5rem;
+    color: var(--footer-text-color);
+    
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+}
+
+.activities a, .hoatdong {
+    display: flex;
+    align-items: center;
+}
+
+.activities img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.activities .hoatdong:first-child {
+    width: 100%;
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.hoatdong {
+    position: relative;
+}
+
+.noidung-hoatdong {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--main-background-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    opacity: 0;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.55);
+    transition: opacity 0.4s ease-in-out;
+}
+
+.hoatdong:hover .noidung-hoatdong {
+    opacity: 1;
 }
 
 footer {
     grid-row: 4;
     display: flex;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     background-color: var(--footer-background-color);
     color: var(--footer-text-color);
-    justify-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 10rem;
 }
 
 footer #footer-info {
@@ -207,17 +278,18 @@ footer #footer-info {
 
 footer #info {
     display: flex;
-    align-items: center;
-    gap: 4rem;
+    align-items: baseline;
+    gap: 5rem;
 }
 
 footer img {
-    max-width: 9rem;
+    max-width: 13rem;
     height: auto;
 }
 
 footer a {
     color: var(--footer-text-color);
 }
+
 
 
