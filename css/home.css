@@ -566,11 +566,11 @@ footer a {
         max-width: 14rem;
         align-self: center;
     }
-}
+/* }
 
 /* Mobile */
 /* iPhone */
-@media screen and (max-width: 375px) {
+/*@media screen and (max-width: 375px) { */
     header {
         gap: 1rem;
         justify-content: space-between;
