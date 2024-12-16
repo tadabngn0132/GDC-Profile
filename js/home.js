@@ -4,7 +4,7 @@ const navMenu = document.getElementById("nav-menu");
 document.addEventListener('click', () => {
     if (menuBarButton.contains(event.target)) {
         navMenu.classList.toggle('show');
-    } else if (!navMenu.contains(event.target)) {
+    } else {
         navMenu.classList.remove('show')
     }
 });

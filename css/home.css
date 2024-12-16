@@ -452,6 +452,7 @@ footer a {
         gap: 2rem;
         margin-top: 4rem;
         padding: 1rem 2rem;
+        scroll-margin-top: 4rem;
     }
 
     .about-text {
@@ -491,6 +492,7 @@ footer a {
     #members {
         align-self: baseline;
         padding: 0 2rem;
+        scroll-margin-top: 4rem;
     }
 
     #members h1 {
@@ -518,6 +520,7 @@ footer a {
         max-width: 46.1rem;
         padding: 0 2rem;
         margin-bottom: 4rem;
+        scroll-margin-top: 5rem;
     }
 
     .activities {
