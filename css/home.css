@@ -571,7 +571,7 @@ footer a {
 
 /* Mobile */
 /* iPhone 6S Plus */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
     header {
         gap: 1rem;
         justify-content: space-between;
