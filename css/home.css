@@ -371,7 +371,8 @@ footer a {
 
 
 /* Tablet */
-@media screen and (max-width: 755.2px) {
+/* Iphone 6S Plus ngang */
+@media screen and (max-width: 736px) {
 
     header {
         gap: 2rem;
@@ -566,11 +567,11 @@ footer a {
         max-width: 14rem;
         align-self: center;
     }
-/* }
+}
 
 /* Mobile */
-/* iPhone */
-/*@media screen and (max-width: 375px) { */
+/* iPhone 6S Plus */
+@media screen and (max-width: 375px) {
     header {
         gap: 1rem;
         justify-content: space-between;
