@@ -6,6 +6,7 @@
     --main-sub-color: #F29B88;
     --footer-background-color: #0D0D0D;
     --footer-text-color: #BF1515;
+    --main-part-padding: 1rem 17.5rem;
 }
 
 * {
@@ -31,22 +32,23 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
     min-height: 100vh;
 }
 
 header {
-    grid-row: 1;
     display: flex;
     align-items: center;
     background-color: var(--header-background-color);
     color: var(--header-text-color);
-    padding: 1rem 0;
+    padding: var(--main-part-padding);
     justify-content: center;
     justify-items: center;
-    gap: 11rem;
+    gap: 8.5rem;
 
     position: fixed;
     top: 0;
@@ -74,16 +76,17 @@ header .nav-button-or-menu-bar {
 header .nav-button {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 header ul {
     display: flex;
-    gap: 3.5rem;
+    gap: 2rem;
 }
 
 header li a {
     color: var(--general-text-color);
+    text-align: center;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -130,47 +133,58 @@ header #nav-menu {
     width: 100%;
 }
 
+.banner-content {
+    align-self: center;
+}
+
 .banner-content img {
     width: 100%;
     height: auto;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 main {
     grid-row: 3;
-    justify-self: center;
-    padding: 3rem 0;
+    padding: var(--main-part-padding);
     background-color: var(--main-background-color);
+    justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 8rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* Code phần giới thiệu */
 #about {
     display: flex;
+    padding: var(--main-part-padding);
+    max-width: 100%;
     align-items: center;
-    align-self: center;
-    gap: 3rem;
+    justify-content: center;
     margin-top: 4rem;
     padding: 1rem 0;
+    gap: 1rem;
     scroll-margin-top: 10rem;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    align-self: center;
+    gap: 1rem;
 }
 
 .about-text h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: var(--header-text-color);
 }
 
 .about-text p {
     font-size: 1.1rem;
     color: var(--general-text-color);
+    margin-bottom: 1.5rem;
+    max-width: 90%;
 }
 
 .about-text a {
@@ -187,11 +201,18 @@ main {
     border-radius: 1rem;
 }
 
+.about-image {
+    max-width: 29.5rem;
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+}
+
 .about-image img {
-    max-width: 35rem;
-    max-height: 35rem;
+    width: 100%;
+    height: 100%;
     border-radius: 0.5rem;
-    border: 0.2rem solid var(--main-sub-color);
+    border: 0.15rem solid var(--main-sub-color);
 }
 
 /* Code phần member */
@@ -199,8 +220,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     scroll-margin-top: 8rem;
+    max-width: 100%;
 }
 
 #members h1 {
@@ -215,32 +238,34 @@ main {
 
 .members {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, minmax(15rem, 1fr));
+    gap: 1rem;
 }
 
 .members a {
     display: flex;
     align-items: center;
+    max-width: 19.3rem;
 }
 
 .members img {
-    max-width: 21.5rem;
+    width: 100%;
     border-radius: 2rem;
     transition: all 0.4s ease-in-out;
 }
 
 .members img:hover {
     transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Code phần hoạt động */
 #activities {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    max-width: 67.75rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;    
     margin-bottom: 6rem;
     gap: 3rem;
     scroll-margin-top: 9.2rem;
@@ -250,20 +275,19 @@ main {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 36.2rem;
 }
 
 .activities-title-content h1 {
     font-size: 2.5rem;
     color: var(--footer-text-color);
-    
 }
 
 .activities-title-content a {
     color: var(--footer-text-color);
     font-weight: 600;
     border: var(--header-text-color) 0.1rem solid;
-    max-width: 22rem;
 
     display: flex;
     align-items: center;
@@ -275,19 +299,24 @@ main {
 
 .activities {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, minmax(15rem, 1fr));
     gap: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.activities a, .hoatdong {
+.hoatdong {
+    position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
+    height: auto;
 }
 
 .activities img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 0.5rem;
     object-fit: cover;
 }
@@ -296,10 +325,6 @@ main {
     width: 100%;
     grid-row: span 2;
     grid-column: span 2;
-}
-
-.hoatdong {
-    position: relative;
 }
 
 .noidung-hoatdong {
@@ -326,14 +351,14 @@ main {
 
 /* Code footer */
 footer {
-    grid-row: 4;
     display: flex;
     align-items: center;
-    padding: 2.5rem 0;
+    width: 100%;
+    padding: 3rem 17.5rem;
     background-color: var(--footer-background-color);
     color: var(--footer-text-color);
     justify-content: center;
-    gap: 9rem;
+    gap: 6rem;
 }
 
 footer #footer-info {
@@ -345,7 +370,7 @@ footer #footer-info {
 footer #info {
     display: flex;
     align-items: baseline;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 footer img {
@@ -370,9 +395,13 @@ footer a {
 }
 
 
-/* Tablet */
-/* Iphone 6S Plus ngang */
-@media screen and (max-width: 736px) {
+/* Tablet Landscape */
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* Tablet Portrait */
+@media screen and (max-width: 768px) {
 
     header {
         gap: 2rem;
@@ -569,9 +598,8 @@ footer a {
     }
 }
 
-/* Mobile */
-/* iPhone 6S Plus */
-@media screen and (width: 414px) {
+/* Mobile Landscape */
+@media screen and (max-width: 480px) {
     header {
         gap: 1rem;
         justify-content: space-between;
@@ -733,5 +761,10 @@ footer a {
         max-width: 8.2rem;
         align-self: baseline;
     }
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 320px) {
+    
 }
 
