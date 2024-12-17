@@ -120,8 +120,17 @@ header .header-button {
 }
 
 header span {
+    padding: 0.7rem 0;
     cursor: pointer;
     display: none;
+}
+
+.menu-bar-overlay {
+    position: absolute;
+    top: 0.35rem;
+    right: 0.8rem;
+    padding: 1.1rem 1.3rem;
+    z-index: 10000;
 }
 
 header #nav-menu {
