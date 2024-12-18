@@ -172,7 +172,7 @@ main {
 #slogan-specific-description {
     display: flex;
     align-items: flex-start;
-    margin-top: 5rem;
+    margin-top: 7rem;
     max-width: 100%;
     gap: 1rem;
 }
@@ -473,12 +473,12 @@ footer a {
     main {
         padding: var(--tablet-portrait-main-part-padding);
         justify-self: center;
-        gap: 5rem;
+        gap: 4rem;
     }
 
     /* Code slogan và description */
     #slogan-specific-description {
-        margin-top: 8rem;
+        margin-top: 5rem;
     }
 
     .slogan-description {
@@ -540,7 +540,7 @@ footer a {
 @media screen and (max-width: 1024px) {
     /* Code slogan và description */
     #slogan-specific-description {
-        margin-top: 8rem;
+        margin-top: 5rem;
     }
 
     #slogan-specific-description img {
@@ -650,11 +650,12 @@ footer a {
     /* Code main */
     main {
         padding: var(--mobile-landscape-main-part-padding);
+        gap: 4rem;
     }
 
     /* Code slogan và description */
     #slogan-specific-description {
-        margin-top: 8rem;
+        margin-top: 4rem;
         flex-direction: column-reverse;
     }
 
@@ -671,6 +672,7 @@ footer a {
     #vision-mission-core-values {
         flex-direction: column;
         align-items: baseline;
+        gap: 2rem;
     }
 
     .vision, .mission, .core-values {
@@ -731,6 +733,14 @@ footer a {
 
     .vision p, .mission p, .core-values p {
         font-size: 0.8rem;
+    }
+
+    #ban-mang {
+        gap: 2rem;
+    }
+
+    #ban-mang h1 {
+        font-size: 1.5rem;
     }
 
     footer {
