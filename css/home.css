@@ -227,6 +227,10 @@ main {
     border: 0.15rem solid var(--main-sub-color);
 }
 
+iframe {
+    height: 487px;
+}
+
 /* Code phần member */
 #members {
     display: flex;
@@ -770,6 +774,10 @@ footer a {
         height: auto;
     }
 
+    iframe {
+        height: 243px;
+    }
+
     /* Code phần member */
     #members {
         align-self: center;
@@ -852,6 +860,10 @@ footer a {
 @media screen and (max-width: 480px) {
     .about-text h1 {
         font-size: 1.25rem;
+    }
+
+    iframe {
+        height: 187px;
     }
 
     footer {
