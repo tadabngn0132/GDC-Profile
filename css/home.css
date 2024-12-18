@@ -157,7 +157,6 @@ header #nav-menu {
 }
 
 main {
-    grid-row: 3;
     padding: var(--main-part-padding);
     background-color: var(--main-background-color);
     align-items: center;
