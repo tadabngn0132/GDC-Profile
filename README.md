@@ -48,7 +48,7 @@ Contributions are welcome! If you wish to contribute, please:
   3. Commit your changes and submit a pull request.
 
 **License**
-This project is licensed under the MIT License. You are free to use, modify, and distribute the code with proper attribution.
+This project is licensed under the MIT License. You are free to use, modify, and distribute the code with proper attribution. See the [LICENSE](./LICENSE) file for details.
 
 **Contact**
 For any inquiries or feedback, please email us at gdc.fpt2022@gmail.com.
