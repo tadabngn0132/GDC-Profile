@@ -1,5 +1,5 @@
 **GDC Website**
-Welcome to the **GDC** website! This project is hosted at https://gdc22.netlify.app/ and serves as a platform for showcasing the vision and services of **Greenwich Dance Crew**.
+Welcome to the **GDC** website! This project is hosted at https://gdc22.netlify.app/ & https://tadabngn0132.github.io/GDC-Profile/ and serves as a platform for showcasing the vision and services of **Greenwich Dance Crew**.
 
 
 **Overview**
@@ -16,7 +16,7 @@ The GDC website is a modern, responsive web application designed to:
 
 
 **Live Demo**
-Visit the live website at: https://gdc22.netlify.app/
+Visit the live website at: https://gdc22.netlify.app/ or https://tadabngn0132.github.io/GDC-Profile/
 
 
 **Technologies Used**
