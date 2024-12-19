@@ -31,6 +31,7 @@ This website was built with:
 If you want to run this website locally, follow these steps:
   1. Clone the repository:
     https://github.com/tadabngn0132/GDC-Profile.git
+  
   Open the index.html file in your browser to view the site locally.
 
 
