@@ -406,7 +406,7 @@ footer a {
     }
 
     iframe {
-        width: 683px;
+        width: 100%;
     }
 
     /* Code footer */
@@ -523,15 +523,15 @@ footer a {
 
     #hoatdong1 h1 {
         color: var(--header-text-color);
-        font-size: 1.5rem;
+        margin: 0;
     }
     
     #hoatdong1 p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     iframe {
-        width: 403px;
+        width: 100%;
     }
 
     /* Code footer */
@@ -572,18 +572,13 @@ footer a {
     #hoatdong1 {
         margin-top: 4rem;
     }
-
-    #hoatdong1 h1 {
-        color: var(--header-text-color);
-        font-size: unset;
-    }
     
     #hoatdong1 p {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     iframe {
-        width: 243px;
+        width: 100%;
         height: 243px;
     }
 
