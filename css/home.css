@@ -207,6 +207,7 @@ header #nav-menu {
     top: 90%; 
     left: 0;
     width: 100%;
+    height: fit-content;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -824,10 +825,17 @@ footer a {
 
     .buttons {
         top: 45%;
+        left: 2%;
+        width: 95.75%;
+    }
+
+    .buttons button {
+        width: 35px;
+        height: 35px;
     }
 
     .dots {
-        top: 95%;
+        top: 85%;
     }
 
     .dots li {
@@ -972,15 +980,11 @@ footer a {
     .slider {
         max-width: 100vw; 
         height: 10.5rem;
-        margin: 3rem 0 1.2rem;
+        margin: 3rem 0 0;
     }
 
     .buttons {
-        display: none;
-    }
-
-    .dots {
-        top: 80%;
+        top: 40%;
     }
 
     .about-text h1 {
