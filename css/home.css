@@ -826,6 +826,12 @@ footer a {
         top: 45%;
     }
 
+    .dots li {
+        width: 5px;
+        height: 5px;
+        margin: 5px;
+    }
+
     /* Code phần giới thiệu */
     main {
         padding: var(--mobile-landscape-main-part-padding);
