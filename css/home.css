@@ -826,10 +826,18 @@ footer a {
         top: 45%;
     }
 
+    .dots {
+        top: 95%;
+    }
+
     .dots li {
         width: 5px;
         height: 5px;
         margin: 5px;
+    }
+
+    .dots li.active {
+        width: 15px;
     }
 
     /* Code phần giới thiệu */
